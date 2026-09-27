@@ -1,0 +1,351 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f1ec;
+    color: #292929;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #1e293b;
+    color: white;
+    padding: 28px 8%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #b8c2cf;
+    margin-bottom: 6px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+.header-name {
+    border-left: 1px solid #64748b;
+    padding-left: 20px;
+    color: #cbd5e1;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    background-color: #ffffff;
+    padding: 16px 8%;
+    border-bottom: 1px solid #ddd;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    margin-right: 25px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #2563a6;
+}
+
+
+/* MAIN */
+
+main {
+    width: 84%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+
+/* ABOUT */
+
+.about {
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    background-color: white;
+
+    min-height: 400px;
+
+    border: 1px solid #ddd;
+}
+
+
+.photo-box {
+    background-color: #ddd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-box img {
+    width: 75%;
+    height: 80%;
+
+    object-fit: cover;
+
+    filter: grayscale(15%);
+}
+
+
+.about-text {
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.number {
+    color: #64748b;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.about-text h2 {
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 22px;
+}
+
+.about-text h2 span {
+    color: #2563a6;
+}
+
+.about-text > p {
+    color: #666;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+
+/* TAG */
+
+.tag {
+    display: flex;
+    gap: 8px;
+    margin-top: 25px;
+}
+
+.tag span {
+    background-color: #eef2f5;
+    border: 1px solid #d9dee3;
+    padding: 7px 12px;
+    font-size: 12px;
+}
+
+
+/* CONTENT */
+
+.content-section {
+    background-color: white;
+
+    padding: 50px;
+
+    margin-top: 25px;
+
+    border: 1px solid #ddd;
+}
+
+.section-head {
+    margin-bottom: 35px;
+}
+
+.section-head h2 {
+    font-size: 30px;
+}
+
+
+/* BIODATA */
+
+.data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.data-item {
+    padding: 20px;
+
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-item small {
+    color: #888;
+    font-size: 11px;
+}
+
+.data-item p {
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+
+/* SKILLS */
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+    display: flex;
+    gap: 25px;
+
+    padding: 22px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.skill:first-child {
+    border-top: 1px solid #ddd;
+}
+
+.skill b {
+    color: #2563a6;
+}
+
+.skill h3 {
+    margin-bottom: 5px;
+}
+
+.skill p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* GOAL */
+
+.goal {
+    margin-top: 25px;
+
+    background-color: #dbe7f0;
+
+    padding: 55px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.goal h2 {
+    font-size: 40px;
+    line-height: 1.1;
+}
+
+.goal > p {
+    color: #52606d;
+    line-height: 1.8;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #1e293b;
+
+    color: #cbd5e1;
+
+    padding: 25px 8%;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 12px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .header-name {
+        border-left: none;
+        border-top: 1px solid #64748b;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    nav a {
+        margin-right: 12px;
+        font-size: 13px;
+    }
+
+    main {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-box {
+        height: 300px;
+    }
+
+    .about-text {
+        padding: 35px;
+    }
+
+    .about-text h2 {
+        font-size: 34px;
+    }
+
+    .content-section {
+        padding: 30px;
+    }
+
+    .data {
+        grid-template-columns: 1fr;
+    }
+
+    .goal {
+        grid-template-columns: 1fr;
+        padding: 35px;
+    }
+
+    .goal h2 {
+        font-size: 32px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
